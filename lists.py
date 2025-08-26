@@ -31,3 +31,36 @@ del myList[3]
 # to clear the list 
 myList.clear()
 print(myList)
+#loop through a list
+myList = ["apple","banana","cherry","orange","kiwi","mango"]
+for x in myList:
+    print(x)
+#Shortest syntax for above example
+myList = ["apple","banana","cherry","orange","kiwi","mango"]
+[print(x) for x in myList]
+#LOOP THROUGH THE INDEX NUMBERS
+myList = ["apple","banana","cherry","orange","kiwi","mango"]
+for i in range(len(myList)):
+    print(myList[i])
+#using a while loop 
+myList = ["apple","banana","cherry","orange","kiwi","mango"]
+i = 0 
+
+while i < len(myList):
+    print(myList[i])
+    i = i + 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
