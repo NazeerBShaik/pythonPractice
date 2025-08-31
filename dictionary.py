@@ -65,4 +65,60 @@ for x in thisdict:
     print(thisdict[x])
 #Loop through the both the keys and values by using items() method
 for x, y in thisdict.items():
-    print(x,y)
+    print(x,y,"yes")
+#copy dictionary
+mydict = thisdict.copy()
+print(mydict,"copy method") 
+#copy dictionary by using dict() function   
+mydict = dict(thisdict)
+print(mydict,"dict function")
+#Nested dictionaries
+myfamily = {
+    "child1" :{
+        "name" : "Email",
+        "year" : 2004
+    },
+    "child2" : {
+        "name" : "Tobias",
+        "year" : 2007
+    },
+    "child3" :{
+        "name" : "Linus",
+        "year" : 2011
+    }
+}
+print(myfamily)
+#If you want to add three dictionaries into a new dictionary
+child1 = {
+        "name" : "Email",
+        "year" : 2004
+}
+child2 = {
+        "name" : "Tobias",
+        "year" : 2007
+},
+child3 = {
+        "name" : "Linus",
+        "year" : 2011
+}
+# myfamily = {
+#    "child1" : child1,
+#    "child2" : child2,
+#    "child3" : child3
+# }
+# print(myfamily,"nested2")
+#access items in nested dictionaries
+print(myfamily["child1"]["year"])
+#Loop through nested dictionaries using items()method
+for x, obj in myfamily.items():
+    print(x)
+
+    for y in obj:
+        print(y + ' :', obj[y])
+#fromkeys(method)        
+
+#clear()method
+x = myfamily.clear()
+print(x, "cleared dict")        
+
+        

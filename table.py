@@ -1,5 +1,5 @@
-n= int(input("give n value: "))
 
+n= int(input("give n value: "))
 for i in range(10):
     print(f"{n} X {i} = {i*n}")
     
