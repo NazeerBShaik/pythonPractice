@@ -37,10 +37,12 @@ x = 41
 if x > 10:
     print("Above ten,")
     if x > 20:
-        print("and also above 20!")
-    else:
+        print("and also above 20!") 
+    else: 
         print("but not above 20.")
+
+#short hand for if else stat
+print("and also above 20!") if x > 20 else print("but not above 20.")
 # Pass Statement if statements cannot be empty but if you for some reason have an if statement with no content put in the pass statement to avoid getting an error
 if b > a:
     pass
-        
