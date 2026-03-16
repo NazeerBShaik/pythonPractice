@@ -6,3 +6,4 @@ def leapYear(year):
   else:
     return False
 print(leapYear(2024))
+
